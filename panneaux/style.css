@@ -1,0 +1,112 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+.panneaux
+{
+    display: flex;
+}
+
+.panneau
+{
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 2s flex cubic-bezier(.47,-0.37,.65,1.29);
+}
+.panneau:hover
+{
+    flex: 5;
+}
+
+.paysage1
+{
+    background-image: url(img/paysage1.jpeg);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.paysage2
+{
+    background-image: url(img/paysage2.jpeg);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.paysage3
+{
+    background-image: url(img/paysage3.jpeg);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.paysage4
+{
+    background-image: url(img/paysage4.jpeg);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.paysage5
+{
+    background-image: url(img/paysage5.jpeg);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.titreH
+{
+    font-size: 4rem;
+    transform: translateY(-400%);
+    transition: 2s;
+    opacity: 0;
+}
+.titreB
+{
+    font-size: 4rem;
+    color: rgb(204, 22, 22);
+    transform: translateY(400%);
+    transition: 2s;
+    opacity: 0;
+}
+
+.panneau:hover .titreH
+{
+    transform: translate(0%);
+    opacity: 1;
+}
+.panneau:hover .titreB
+{
+    transform: translate(0%);
+    opacity: 1;
+}
+
+.pictureProfil
+{
+    background-image: url(img/25786134576ce0344893b33a051160b1.jpeg);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-400%);
+    transition: 2s;
+    opacity: 0;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.panneau:hover .pictureProfil
+{
+    transform: translate(0%);
+    opacity: 1;
+}
